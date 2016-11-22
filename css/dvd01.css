@@ -5,7 +5,7 @@
 	body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6{ margin:0;padding:0;}
 	ol, {list-style:none;}
 	html,body { margin:0;padding:0; font-family: 'hind', sans-serif; background-color: #f2f2f2; font-size: 14pt;}
-	hr{ color:#ccc; opacity:.2; margin:15px 0px 10px 0px; border-style: solid; border-width: 1px; width: 100%; margin-top: 50px;}
+	hr{ color:#111; opacity:.5; margin:15px 0px 10px 0px; border-style: solid; border-width: 1px; width: 100%; margin-top: 50px;}
 	@media screen and (max-width: 960px) 
 	{
 		body{padding:0px 0px 0px 0px;}
@@ -21,7 +21,7 @@
     }
 
 /* link */
-	a:link {text-decoration: none; opacity: 1; color: #09c;}
+	a:link {text-decoration: none; opacity: 1; color: #ff0011;}
 	a:hover {text-decoration: none; opacity: .8; }
 	a:visited {text-decoration: none; color: #09c;}
 	a.active {text-decoration: none;color: #09c}
@@ -30,8 +30,8 @@
     .top-nav-wrapper 			{position:fixed; width:100%; height:auto; z-index:9999; background-color: #002233;}
     .top-nav 		 			{max-width:960px; height:50px; text-align: left; font-size: 12pt; font-weight: 100;}
 
-    .logo-dvd					{float:left; padding-right: 20px;} 
-		.logo-dvd a 			{background:url(../images/mm-dvd-logo.png) 0 0 no-repeat; width: 300px; height: 50px;outline: none; text-indent: -5000px; display: block; }
+    .logo-dvd					{float:left; padding-right: 30px;} 
+		.logo-dvd a 			{background:url(../images/mm-dvd-logo.png) 0 0 no-repeat; width: 250px; height: 50px;outline: none; display: block; }
 		.logo-dvd a:hover		{}
 		.logo-dvd a.active		{}
 
@@ -57,7 +57,7 @@
 	    }
     @media (max-width: 480px) {
 	      .mm-a ul li a			{padding-right: .5em;}
-	      .mm-b 				{float: left;}
+	      .mm-b 				{}
 	      .logo-dvd a 			{}
 	    }
 
@@ -104,8 +104,8 @@
 		}
 
 /* wrapper */
-	.section-wrapper{background-color: #fafafa; }
-	.page-wrapper{background-color: #fafafa; }
+	.section-wrapper{background-color: #fafafa; padding: 40px 0 80px 0; }
+	.page-wrapper{background-color: #fafafa;}
 
 	/* background for 2nd menu header */
 	.j-top 	{width:100%; padding: 0px 0px 0px 0px; height:auto; position:relative;overflow: hidden;z-index:1000;}
@@ -115,7 +115,7 @@
 		.j-top960 img 	{float:left; width:100%; position:relative; overflow: hidden;}
 		.j-top960 span 	{float:left; height: auto; position:relative; font-family: 'Alice', Lucida Sans Unicode, sans-serif; color: #333; font-size: 16pt; padding-top: 20px;}
 	
-	.j-wrapper{clear:both; width:960px;text-align: left;}
+	.j-wrapper{clear:both; width:960px;text-align: left; padding: 0px 0 0px 0;}
 		.j-title-top 		{width:220px;position:relative; float: left; margin: 20px 40px 00px 00px; text-align: left; clear:both;}
 		.j-title-top span 	{width:100%; position:relative; float: left; margin: 00px 00px 00px 00px;}	
 
@@ -192,14 +192,14 @@
 		.j-album ul					{list-style: none;}
 		/* album title */
 		.j-album span				{width:100%; position:relative; float: left; color: #333; text-align: center; font-size: 24pt; font-weight: 100; padding:10px 0 20px 0;}
-		.j-album li 				{float: left; list-style:none; width:314px; position: relative; margin: 5px 5px 0px 0px;}
-		.j-album li:last-child 		{margin: 5px 0px 0px 0px;}
+		.j-album li 				{float: left; list-style:none; width:160px; position: relative; margin: 25px 25px 0px 0px;}
+		.j-album li:last-child 		{margin: 25px 0px 0px 0px;}
 		/* overlay*/
 		.j-album li a 				{opacity:1;display:block; height:auto; border-radius: 5px; position:relative; overflow:hidden;}
 		.j-album li a:hover 		{opacity:.80;}
 		.j-album li a img 			{max-width:100%; display: block; overflow:hidden; border-radius: 5px; }
 		/* thumb hover overlay text */
-		.j-album li a span 			{float:left; opacity:1; position: relative; width: 100%; height: auto; padding: 15px 0px 15px 0px;color: #666; text-align: center; font-weight:300; font-size: 14px; font-family: 'Alice', Lucida Sans Unicode, sans-serif; }
+		.j-album li a span 			{float:left; opacity:1; position: relative; width: 100%; height: auto; padding: 15px 0px 15px 0px;color: #666; text-align: left; font-weight:300; font-size: 16px;}
 		.j-album li a:hover span 	{color: #111;}
 			@media screen and (max-width: 960px) 
 			{
@@ -379,12 +379,12 @@
 	h1, h2, h3, h4, h5, h6, .j-top960 span, .j-ad-a, .j-ad-b, .link-list ul span, .pull {font-family: 'hind', sans-serif;}
 
 	h1 {font-weight:800; color:#003366; font-size: 24pt; line-height:1.4;}
-	h2 {font-weight:300; color:#111111; font-size: 22pt; line-height:1.4; margin-bottom: .5em;}
-	h3 {font-weight:100; color:#003366; font-size: 18pt; line-height:1.4;}
-	h4 {font-weight:100; color:#111111; font-size: 14pt; line-height:1.5;}
-	h5 {font-weight:800; color:#111111; font-size: 10pt; line-height:1.5;}
+	h2 {font-weight:300; color:#003366; font-size: 22pt; line-height:1.4; margin-bottom: .5em;}
+	h3 {font-weight:600; color:#111111; font-size: 18pt; line-height:1.4;}
+	h4 {font-weight:300; color:#111111; font-size: 14pt; line-height:1.5;}
+	h5 {font-weight:600; color:#003366; font-size: 10pt; line-height:1.5;}
 	h5 li {list-style: none;text-decoration: none;}
-	h6 {font-weight:100; color:#666; font-size: 10pt; line-height:1.8; margin-top: 1.2em; }
+	h6 {font-weight:600; color:#003366; font-size: 10pt; line-height:1.8; margin-top: 1.2em; }
 
 	.sub 				{font-size: 90%;font-weight: 100; opacity: 1; margin-bottom: 1em; line-height:1.4;}
 	.tag 				{font-size: 10pt; font-weight: 100; opacity: .5; margin-bottom: .5em; }
@@ -416,6 +416,9 @@
 		  .pull			{font-size: 18pt;}
 		}
 	.head 		{color:#333;}
+
+	.mark		{color:#fff; background-color: #99bbdd; font-weight:100; font-size: 12pt; line-height:1.4; border-radius: 5px; padding: 5px 20px; margin:30px 0 30px 0; border: rgba(50,50,50,0.1) 0px solid;}
+	.mark2		{color:#fff; background-color: #ffbb99; font-weight:100; font-size: 12pt; line-height:1.4; border-radius: 5px; padding: 5px 20px; margin:30px 0 30px 0; border: rgba(50,50,50,0.1) 0px solid;}
 
 	.quote		{color:#111; font-weight:100; font-size: 12pt; line-height:1.6; border-radius: 5px; padding: 30px; margin:20px 0 20px 0; border: rgba(50,50,50,0.1) 1px solid; background-color: #f8ead3}
 	.quote img	{padding-bottom: 20px;}
