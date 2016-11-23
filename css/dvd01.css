@@ -21,7 +21,7 @@
     }
 
 /* link */
-	a:link {text-decoration: none; opacity: 1; color: #ff0011;}
+	a:link {text-decoration: none; opacity: 1; color: #ff0033;}
 	a:hover {text-decoration: none; opacity: .8; }
 	a:visited {text-decoration: none; color: #09c;}
 	a.active {text-decoration: none;color: #09c}
@@ -38,14 +38,14 @@
 	.mm-a 						{float: left; padding: 0 10px 0 10px; overflow: hidden;}
 	    .mm-a ul		 		{float: left; width: 100%; list-style: none;}
 	    .mm-a ul li 		 	{float: left; height: 50px; line-height: 50px;}
-	    .mm-a ul li a			{float: left; text-decoration:none; display: inline-block; margin-right: 1.2em; color: #fff;}
-	    .mm-a ul li a:hover		{}
+	    .mm-a ul li a			{float: left; text-decoration:none; display: inline-block; padding-right: 1.2em; color: #006699;}
+	    .mm-a ul li a:hover		{ color: #99bbdd;}
 	    .mm-a ul li a.active	{color: #ff0011; font-weight: 500;}
 
-	.mm-b 						{float: right; font-size: 18pt; overflow: hidden;}
+	.mm-b 						{float: right; font-size: 14pt; overflow: hidden;}
 	    .mm-b ul		 		{width: auto; list-style: none;}
 	    .mm-b ul li 		 	{float: left; height: 50px; line-height: 50px;}
-	    .mm-b ul li a			{text-decoration:none; display: inline-block; font-weight: 800; color: #ff0011;}
+	    .mm-b ul li a			{text-decoration:none; display: inline-block; font-weight: 800; color: #ff0033;}
 	    .mm-b ul li a:hover		{}
 	    .mm-b ul li a.active	{color: #fff;}
 	    .mm-b ul li a:visited	{}
@@ -56,13 +56,10 @@
 	      .top-nav-special		{width:90%;}
 	    }
     @media (max-width: 480px) {
-	      .mm-a ul li a			{padding-right: .5em;}
+	      .mm-a ul li a			{}
 	      .mm-b 				{}
 	      .logo-dvd a 			{}
 	    }
-
-
-
 
 /* M M BAR style set */
 	#bar{position:relative; width:100%;height:auto; z-index:999; background-color: #f2f2f2;padding-top: 50px;}
@@ -127,13 +124,15 @@
 		.j-post span 	{width:100%; position:relative; float: left; margin: 00px 00px 20px 00px;}
 		.j-post img 	{width:100%; position:relative; float: left; margin: 02px 00px 00px 00px;}
 
-		.j-post960 		{width:960px;position:relative; float: left; margin: 20px 00px 00px 00px; text-align: center;}
-		.j-post960 span {width:100%; position:relative; float: left; margin: 20px 00px 20px 00px;}
+		.j-post960 		{width:100%; position:relative; float: left; margin: 20px 00px 00px 00px; text-align: center;}
+		.j-post960 span {width:100%; position:relative; float: left; margin: 20px 00px 20px 00px; padding: 0 0 0 0;}
 		.j-post960 img 	{width:100%; position:relative; float: left; margin: 02px 00px 00px 00px;}
+		.j-post960 a 	{text-decoration:none; color:#111;}
 
-		.j-post700 		{width:70%;position:relative; float: left; margin: 20px 00px 00px 00px; text-align: center; padding: 0 15% 0 15%;}
+		.j-post700 		{width:70%;position:relative; float: left; margin: 20px 00px 00px 00px; text-align: left; padding: 0 15% 0 15%;}
 		.j-post700 span {width:100%; position:relative; float: left; margin: 20px 00px 20px 00px;}
 		.j-post700 img 	{width:100%; position:relative; float: left; margin: 02px 00px 00px 00px;}
+		.j-post960 a 	{text-decoration:none; color:#111;}
 
 		.j-video		{position: relative;}
 		.j-video iframe	{position: absolute; float:left;width: 100%;height: 100%;}
@@ -188,24 +187,27 @@
 
 	/* All Projects Album for footer */
 		#footproject {clear: both; float:left; width:100%; margin:20px 0 60px 0; text-align: left;}
+
+	/* All Projects Album for footer */
+		.j-album-wrapper 			{clear: both; float:left; width:100%; }
 		.j-album					{float:left; width:960px; text-align: left;margin: 30px 0px 30px 0px;}
 		.j-album ul					{list-style: none;}
 		/* album title */
-		.j-album span				{width:100%; position:relative; float: left; color: #333; text-align: center; font-size: 24pt; font-weight: 100; padding:10px 0 20px 0;}
-		.j-album li 				{float: left; list-style:none; width:160px; position: relative; margin: 25px 25px 0px 0px;}
+		.j-album span				{width:100%; position:relative; float: left; color: #333; text-align: left; font-size: 16pt; font-weight: 100; padding:10px 0 20px 0;}
+		.j-album li 				{float: left; list-style:none; width:135px; height: 200px; position: relative; margin: 25px 25px 0px 0px;}
 		.j-album li:last-child 		{margin: 25px 0px 0px 0px;}
 		/* overlay*/
 		.j-album li a 				{opacity:1;display:block; height:auto; border-radius: 5px; position:relative; overflow:hidden;}
 		.j-album li a:hover 		{opacity:.80;}
 		.j-album li a img 			{max-width:100%; display: block; overflow:hidden; border-radius: 5px; }
 		/* thumb hover overlay text */
-		.j-album li a span 			{float:left; opacity:1; position: relative; width: 100%; height: auto; padding: 15px 0px 15px 0px;color: #666; text-align: left; font-weight:300; font-size: 16px;}
+		.j-album li a span 			{float:left; opacity:1; position: relative; width: 100%; height: auto; padding: 15px 0px 15px 0px;color: #666; text-align: left; font-weight:300; font-size: 12px;}
 		.j-album li a:hover span 	{color: #111;}
 			@media screen and (max-width: 960px) 
 			{
 			  .j-album					{width:100%;}
 			  .j-album span				{width:100%;}
-			  .j-album li 	 			{width:32%; height: auto;}
+			  .j-album li 	 			{width:16%;}
 			  .j-album li a 			{width: 100%; height: auto;}
 			  .lb-album li a img 		{}
 			  .j-album li a span 		{}
@@ -214,7 +216,7 @@
 			{
 			  .j-album					{width:100%;}
 			  .j-album span				{width:100%;}
-			  .j-album li 	 			{width: 48%; height: auto;}
+			  .j-album li 	 			{width: 24%; }
 			  .j-album li a 			{width: 100%; height: auto;}
 			  .lb-album li a img 		{}
 			  .j-album li a span 		{font-size: 11pt;}
@@ -227,14 +229,6 @@
 		.share li 	{float:left; border:none; text-decoration: none;}
 		.share a 	{color: #666; font-size: 14pt; padding: 1px 0px; margin-right: 15px;} 
 		.share a:hover {color: #111;}
-
-	/* MAGIC TYPE style set */
-		#footmenu3	{clear: both;float:center; width:auto; padding:40px 30px 30px 30px; margin-bottom: 40px; background:url(../images/magictype_background.jpg) 50% 50% no-repeat;border-radius: 2px;}
-		#footmenu3 span { }
-			.magictype 			{margin: 0px; padding:0px;}
-			.magictype a 		{outline: none; text-indent: -5000px; display:block; width:200px; height:72px; background:url(../images/magictype_foot_logo.png) 0 0 no-repeat;  }
-			.magictype a:hover 	{background-position: 0 -72px;}
-			.magictype a:active {background-position: 0 -144px;}
 	
 	/* SOCIAL icons style set */
 		#footmenu2	{clear: both; float:left; width:100%; padding:20px 0 20px 0;font-size: 10pt; font-weight: 100; line-height:1.4; text-align: left; }
@@ -245,11 +239,8 @@
 		#footmenu2 ul li a 		{color:#666; text-decoration:none;}
 		#footmenu2 ul li a:hover {color:#111; text-decoration:none;}
 		/* icons all */
-			.jaiki, .be120, .be, .fb, .tw, .in, .blog{float:left; margin: 10px 10px 0px 0px;}
+			.be120, .be, .fb, .tw, .in, .blog{float:left; margin: 10px 10px 0px 0px;}
 			
-			.jaiki a 		{outline: none; text-indent: -5000px; display:block; width:150px; height:72px; background:url(../images/jaiki_foot_logo.png) 0 0 no-repeat;  }
-			.jaiki a:hover 	{background-position: 0 -72px;}
-			.jaiki a:active {background-position: 0 -144px;}
 			.be120 a 		{outline: none; text-indent: -5000px; display:block; width:100px; height:36px; background:url(../images/ic_be.png) 0 0 no-repeat;}
 			.be120 a:hover 	{background-position: 0 -36px;}
 			.be120 a:active {background-position: 0 -72px;}
@@ -335,6 +326,47 @@
 		.post-link2 ul li a:hover 	{opacity: .8; display:block; text-decoration:none;}
 		.post-link2 ul li:first-child{padding-left: 0pt;}			
 
+/* Projects AD A BLUE style set */
+		.j-ad-a					{float:left; width:100%; text-align: center; margin: 20px 0 20px 0; background-image: url(../images/projects_ad_back.jpg);background-size:cover; border-radius: 5px; background-color:#ff0033; }
+		.j-ad-a ul 				{float:left; list-style:none; width: 90%; padding:1.2em 5%;}
+		.j-ad-a ul li 			{float:center; display:inline; padding:0 .5em 0 0;}
+		.j-ad-a ul li a 		{text-decoration:none; color:#fff; font-size: 18pt; text-shadow: 0px 0px 1px rgba(0,0,0,0.3);}
+		.j-ad-a ul li a:hover 	{color: #fafafa;}
+
+			@media screen and (max-width: 960px) 
+			{
+				.j-ad-a 		{}
+				.j-ad-a ul 		{padding:1em 5%;}
+				.j-ad-a ul li a {font-size: 16pt;}
+			}
+			@media screen and (max-width: 480px) 
+			{
+				.j-ad-a			{}
+				.j-ad-a ul 		{padding:.6em 5%;}
+				.j-ad-a ul li a {font-size: 12pt;}
+			}
+/* Projects AD B BEIGE style set */
+		.j-ad-b					{float:left; width:100%; text-align: center; margin: 20px 0 20px 0; background-image: url(../images/projects_ad_back2.jpg);background-size:cover; border-radius: 5px; border:rgba(100,100,100,0.1) 1px solid;}
+		.j-ad-b ul 				{float:left; list-style:none; width: 90%; padding:1.2em 5%;}
+		.j-ad-b ul li 			{float:center; display:inline; padding:0 .5em 0 0;}
+		.j-ad-b ul li a 		{text-decoration:none; color:#7f6f4e; font-size: 18pt; text-shadow: 0px 0px 1px rgba(0,0,0,0.0);}
+		.j-ad-b ul li a:hover 	{color: #111;}
+		
+			@media screen and (max-width: 960px) 
+			{
+				.j-ad-b 		{}
+				.j-ad-b ul 		{padding:1em 5%;}
+				.j-ad-b ul li a {font-size: 16pt;}
+			}
+			@media screen and (max-width: 480px) 
+			{
+				.j-ad-b 		{}
+				.j-ad-b ul 		{padding:.6em 5%;}
+				.j-ad-b ul li a {font-size: 12pt;}
+			}
+
+
+
 /* go top button */
 	.scrollup {width: 60px; height: 60px; position: fixed; bottom: 20px; right: 20px; z-index: 50000; display: none; text-indent: -9999px; background:url(../images/go_top.png) 0 0 no-repeat;}
 	.scrollup a{opacity: .5;}
@@ -387,7 +419,7 @@
 	h6 {font-weight:600; color:#003366; font-size: 10pt; line-height:1.8; margin-top: 1.2em; }
 
 	.sub 				{font-size: 90%;font-weight: 100; opacity: 1; margin-bottom: 1em; line-height:1.4;}
-	.tag 				{font-size: 10pt; font-weight: 100; opacity: .5; margin-bottom: .5em; }
+	.tag 				{font-size: 8pt; font-weight: 100; opacity: .5; margin-bottom: .5em; line-height: 1.8; }
 
 	p  					{font-weight:100; color:#333; font-size: 12pt; line-height:1.6; margin-top: .5em; margin-bottom: .5em;}
 	.italic 			{font-style: italic;}
@@ -417,7 +449,7 @@
 		}
 	.head 		{color:#333;}
 
-	.mark		{color:#fff; background-color: #99bbdd; font-weight:100; font-size: 12pt; line-height:1.4; border-radius: 5px; padding: 5px 20px; margin:30px 0 30px 0; border: rgba(50,50,50,0.1) 0px solid;}
+	.mark		{color:#fff; background-color: #99bbdd; display: inline-block; font-weight:100; font-size: 12pt; line-height:1.4; border-radius: 5px; padding: 5px 20px; margin:30px 0 30px 0; border: rgba(50,50,50,0.1) 0px solid;}
 	.mark2		{color:#fff; background-color: #ffbb99; font-weight:100; font-size: 12pt; line-height:1.4; border-radius: 5px; padding: 5px 20px; margin:30px 0 30px 0; border: rgba(50,50,50,0.1) 0px solid;}
 
 	.quote		{color:#111; font-weight:100; font-size: 12pt; line-height:1.6; border-radius: 5px; padding: 30px; margin:20px 0 20px 0; border: rgba(50,50,50,0.1) 1px solid; background-color: #f8ead3}
